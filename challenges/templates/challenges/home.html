@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- linking css files -->
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+
+<!-- Adding Title -->
+{% block title %}
+    Challenges HomePage
+{% endblock %}
+
+<!-- Adding Include files -->
+{% block content %}
+    {% include "challenges/includes/header.html" with active_page="home"%}
+
+<!-- Adding All Challenges To the Page -->
+    <h1 class="heading">Your All Challenges</h1>
+    <div class="all-challenges">
+        {% for i in months %}
+        <h1><a href="{% url 'challege_by_str' i %}">{{i}} challenge</a></h1>
+        {% endfor %}
+    </div>
+{% endblock %}
+

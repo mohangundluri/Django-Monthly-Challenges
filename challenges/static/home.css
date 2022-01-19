@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+  background-color: rgb(29, 28, 28);
+}
+.header{
+    margin-top: 50px;
+    margin-left: 100px;
+    color: wheat;
+    font-variant: small-caps;
+}
+.header a{
+    text-decoration: none;
+    color: gray;
+    font-size: 20px;
+}
+h2{
+    color: gray;
+    margin-top: 10px;
+    margin-left: 100px;
+    text-transform: capitalize;
+    font-variant: small-caps;
+    
+}
+.heading{
+    color: rgb(141, 0, 82);
+    margin: 20px auto;
+    text-align: center;
+}
+.all-challenges{
+    width: 500px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    background-color: rgb(231, 219, 219);
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 3px rgba(0, 0, 0, 0.26);
+
+
+}
+.all-challenges h1{
+    font-variant: small-caps;
+    flex-basis: 250px;
+    font-size: 25px;
+    border-bottom: 2px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(131, 129, 129);
+}
+a:link{
+    color: rgb(131, 129, 129);
+}
+
+a:hover{
+    color:rgb(252, 104, 129);
+}
+a:active{
+    color: #7e0154;
+}

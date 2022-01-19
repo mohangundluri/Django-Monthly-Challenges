@@ -1,0 +1,27 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'challenge.css' %}">
+{% endblock %}
+
+{% block title %}
+    {{month_name}}
+{% endblock %}
+
+
+{% block content %}
+
+    {% include "challenges/includes/header.html" with active_page="Challenge"%}   <!--used include tag -->
+
+    <div class="content">
+        <h1>{{month_name}} Challenge</h1>
+        {% if text is None %}
+            <h1>This is None</h1>
+        <!--{% elif month_name == 'jan' %}
+            <h1>woW workded</h1>   -->
+        {%else %}
+            <h1>{{text}}</h1>
+        {% endif %}
+    </div>
+{% endblock %}
